@@ -1,0 +1,151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'node-inspector' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'node-inspector', null ]
+7 verbose cache add name=undefined spec="node-inspector" args=["node-inspector",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'node-inspector',
+8 verbose parsed url   path: 'node-inspector',
+8 verbose parsed url   href: 'node-inspector' }
+9 silly lockFile 4198ef9e-node-inspector node-inspector
+10 verbose lock node-inspector /Users/idanwe/.npm/4198ef9e-node-inspector.lock
+11 silly lockFile 4198ef9e-node-inspector node-inspector
+12 silly lockFile 4198ef9e-node-inspector node-inspector
+13 verbose addNamed [ 'node-inspector', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile e68b88da-node-inspector node-inspector@
+16 verbose lock node-inspector@ /Users/idanwe/.npm/e68b88da-node-inspector.lock
+17 silly addNameRange { name: 'node-inspector', range: '', hasData: false }
+18 verbose url raw node-inspector
+19 verbose url resolving [ 'https://registry.npmjs.org/', './node-inspector' ]
+20 verbose url resolved https://registry.npmjs.org/node-inspector
+21 info trying registry request attempt 1 at 12:16:55
+22 verbose etag "E3FB8GFB73TXN1NGF5DNSL0PV"
+23 http GET https://registry.npmjs.org/node-inspector
+24 http 304 https://registry.npmjs.org/node-inspector
+25 silly registry.get cb [ 304,
+25 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+25 silly registry.get     etag: '"E3FB8GFB73TXN1NGF5DNSL0PV"',
+25 silly registry.get     date: 'Tue, 30 Jul 2013 09:16:52 GMT',
+25 silly registry.get     'content-length': '0' } ]
+26 verbose etag node-inspector from cache
+27 silly addNameRange number 2 { name: 'node-inspector', range: '', hasData: true }
+28 silly addNameRange versions [ 'node-inspector',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.1.9',
+28 silly addNameRange     '0.1.10',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.2.0-beta1',
+28 silly addNameRange     '0.2.0-beta2',
+28 silly addNameRange     '0.2.0-beta3',
+28 silly addNameRange     '0.2.0-beta4',
+28 silly addNameRange     '0.3.0-preview1' ] ]
+29 verbose addNamed [ 'node-inspector', '0.3.2' ]
+30 verbose addNamed [ '0.3.2', '0.3.2' ]
+31 silly lockFile 87d8cdac-node-inspector-0-3-2 node-inspector@0.3.2
+32 verbose lock node-inspector@0.3.2 /Users/idanwe/.npm/87d8cdac-node-inspector-0-3-2.lock
+33 verbose read json /Users/idanwe/.npm/node-inspector/0.3.2/package/package.json
+34 silly lockFile 87d8cdac-node-inspector-0-3-2 node-inspector@0.3.2
+35 silly lockFile 87d8cdac-node-inspector-0-3-2 node-inspector@0.3.2
+36 silly lockFile e68b88da-node-inspector node-inspector@
+37 silly lockFile e68b88da-node-inspector node-inspector@
+38 silly resolved [ { name: 'node-inspector',
+38 silly resolved     version: '0.3.2',
+38 silly resolved     description: 'Web Inspector based nodeJS debugger',
+38 silly resolved     homepage: 'http://github.com/node-inspector/node-inspector',
+38 silly resolved     author: { name: 'Danny Coates', email: 'dannycoates@gmail.com' },
+38 silly resolved     keywords: [ 'debug', 'debugger', 'inspector', 'profiler' ],
+38 silly resolved     repository:
+38 silly resolved      { type: 'git',
+38 silly resolved        url: 'http://github.com/node-inspector/node-inspector.git' },
+38 silly resolved     engines: { node: '>=0.8.0' },
+38 silly resolved     bin: { 'node-inspector': './bin/inspector.js' },
+38 silly resolved     dependencies:
+38 silly resolved      { 'socket.io': '~0.9.14',
+38 silly resolved        express: '~3.2',
+38 silly resolved        async: '~0.2.8',
+38 silly resolved        glob: '~3.2.1' },
+38 silly resolved     devDependencies: { mocha: 'latest', chai: 'latest' },
+38 silly resolved     preferGlobal: true,
+38 silly resolved     scripts: { test: 'mocha' },
+38 silly resolved     contributors:
+38 silly resolved      [ [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object],
+38 silly resolved        [Object] ],
+38 silly resolved     readme: '# Node Inspector\n\n[![Build Status](https://travis-ci.org/node-inspector/node-inspector.png?branch=master)](https://travis-ci.org/node-inspector/node-inspector)\n[![NPM version](https://badge.fury.io/js/node-inspector.png)](http://badge.fury.io/js/node-inspector)\n\n\n## Overview\nNode Inspector is a debugger interface for node.js using the\nBlink Developer Tools (former WebKit Web Inspector).\n\n## Features\n\nThe Blink DevTools debugger is a great javascript debugger interface;\nit works just as well for node. Node Inspector supports almost all\nof the debugging features of DevTools.\n\n* Navigate in your source files\n* Set breakpoints (and specify trigger conditions)\n* Break on exceptions\n* Step over, step in, step out, resume (continue)\n* Continue to location\n* Disable/enable all breakpoints\n* Inspect scopes, variables, object properties\n* Hover your mouse over an expression in your source to display its value in\n  a tooltip\n* Edit variables and object properties\n* (etc.)\n\n### Cool stuff\n* Node Inspector uses WebSockets, so no polling for breaks.\n* Remote debugging\n* [Live edit of running code](http://github.com/dannycoates/node-inspector/wiki/LiveEdit),\n  optionally persisting changes back to the file-system.\n* Set breakpoints in files that are not loaded into V8 yet - useful for\n  debugging module loading/initialization.\n* Javascript from top to bottom :)\n\n## Known Issues\n\nThis is beta-quality code, so use at your own risk.\n\n* Be careful about viewing the contents of Buffer objects,\n  each byte is displayed as an individual array element;\n  for most Buffers this will take too long to render.\n* While not stopped at a breakpoint the console doesn\'t always\n  behave as you might expect.\n* Profiler is not implemented yet. Have a look at\n  [node-webkit-agent](https://github.com/c4milo/node-webkit-agent)\n  in the meantime.\n* Break on uncaught exceptions does not work because of missing\n  [support in node](https://github.com/joyent/node/pull/5713).\n* Debugging multiple processes (e.g. cluster) is cumbersome.\n\n# Getting Started\n\n## Requirements\n\n* [node.js](http://github.com/ry/node)\n  - version 0.8 or later\n* [npm](http://github.com/isaacs/npm)\n* A Blink-based browser (i.e. Google Chrome)\n\n## Install\n\n* With [npm](http://github.com/isaacs/npm)\n\n        $ npm install -g node-inspector\n\n## Enable debug mode\n\nTo use node-inspector, enable debugging on the node you wish to debug.\nYou can either start node with a debug flag like:\n\n    $ node --debug your/node/program.js\n\nor, to pause your script on the first line:\n\n    $ node --debug-brk your/short/node/script.js\n\nOr you can enable debugging on a node that is already running by sending\nit a signal:\n\n1. Get the PID of the node process using your favorite method.\n`pgrep` or `ps -ef` are good\n\n\t\t$ pgrep -l node\n\t\t2345 node your/node/server.js\n\n2. Send it the USR1 signal\n\n\t\t$ kill -s USR1 2345\n\nGreat! Now you are ready to attach node-inspector\n\n## Debugging\n\n1. start the inspector. I usually put it in the background\n\n\t\t$ node-inspector &\n\n2. open http://127.0.0.1:8080/debug?port=5858 in Chrome\n\n3. you should now see the javascript source from node. If you don\'t, click the scripts tab.\n\n4. select a script and set some breakpoints (far left line numbers)\n\n5. then watch the [screencasts](http://www.youtube.com/view_play_list?p=A5216AC29A41EFA8)\n\nFor more information on getting started see the [wiki](http://github.com/dannycoates/node-inspector/wiki/Getting-Started---from-scratch)\n\nnode-inspector works almost exactly like the web inspector in\nChrome. Here\'s a good [overview](http://code.google.com/chrome/devtools/docs/scripts.html) of the UI\n\n## Inspector options\n\n    --web-port=[port]     port to host the inspector (default 8080)\n    --web-host=[host]     host to listen on (default 0.0.0.0)\n\n# FAQ / WTF\n\n1. My script runs too fast to attach the debugger.\n\n  > use `--debug-brk` to pause the script on the first line\n\n2. I got the ui in a weird state.\n\n  > when in doubt, refresh\n\n3. Can I debug remotely?\n\n  > Yes. node-inspector must be running on the same machine,\n  > but your browser can be anywhere.\n  > Just make sure port 8080 is accessible\n\n# Thanks\n\nThis project respectfully uses code from and thanks the authors of:\n\n* [Blink](http://www.chromium.org/blink)\n* [node](http://github.com/joyent/node)\n* [socket.io](http://github.com/LearnBoost/socket.io)\n* [express](http://expressjs.com/)\n* [async](https://github.com/caolan/async)\n* [glob](https://github.com/isaacs/node-glob)\n',
+38 silly resolved     readmeFilename: 'readme.md',
+38 silly resolved     _id: 'node-inspector@0.3.2',
+38 silly resolved     _from: 'node-inspector@' } ]
+39 info install node-inspector@0.3.2 into /usr/local/lib
+40 info installOne node-inspector@0.3.2
+41 verbose from cache /Users/idanwe/.npm/node-inspector/0.3.2/package/package.json
+42 info /usr/local/lib/node_modules/node-inspector unbuild
+43 verbose read json /usr/local/lib/node_modules/node-inspector/package.json
+44 verbose tar unpack /Users/idanwe/.npm/node-inspector/0.3.2/package.tgz
+45 silly lockFile 885d0a05--lib-node-modules-node-inspector /usr/local/lib/node_modules/node-inspector
+46 verbose lock /usr/local/lib/node_modules/node-inspector /Users/idanwe/.npm/885d0a05--lib-node-modules-node-inspector.lock
+47 silly lockFile 11903844-node-inspector-0-3-2-package-tgz /Users/idanwe/.npm/node-inspector/0.3.2/package.tgz
+48 verbose lock /Users/idanwe/.npm/node-inspector/0.3.2/package.tgz /Users/idanwe/.npm/11903844-node-inspector-0-3-2-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 error Error: EACCES, mkdir '/usr/local/lib/node_modules/node-inspector'
+50 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/node-inspector']
+50 error   errno: 3,
+50 error   code: 'EACCES',
+50 error   path: '/usr/local/lib/node_modules/node-inspector',
+50 error   fstream_type: 'Directory',
+50 error   fstream_path: '/usr/local/lib/node_modules/node-inspector',
+50 error   fstream_class: 'DirWriter',
+50 error   fstream_stack:
+50 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+50 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+50 error      'Object.oncomplete (fs.js:93:15)' ] }
+51 error Please try running this command again as root/Administrator.
+52 error System Darwin 12.4.0
+53 error command "node" "/usr/local/bin/npm" "install" "-g" "node-inspector"
+54 error cwd /Users/idanwe/Desktop/Programing/NodeJS/chat
+55 error node -v v0.10.0
+56 error npm -v 1.2.14
+57 error path /usr/local/lib/node_modules/node-inspector
+58 error fstream_path /usr/local/lib/node_modules/node-inspector
+59 error fstream_type Directory
+60 error fstream_class DirWriter
+61 error code EACCES
+62 error errno 3
+63 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/node-inspector'
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+64 error fstream_stack Object.oncomplete (fs.js:93:15)
+65 verbose exit [ 3, true ]

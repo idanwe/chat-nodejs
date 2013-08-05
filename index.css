@@ -1,0 +1,54 @@
+#chat-container {
+  width: 600px;
+  height: 450px;
+  margin: auto;
+}
+
+#chat-dialog {
+  border: 1px solid #B2F7CB;
+  width: 84.5%;
+  float: right;
+  background-color: black;
+  height: 419px;
+  overflow: scroll;
+}
+
+#chat-dialog ul {
+  padding: 5px 5px 5px 0;
+  margin: 0;
+  list-style: none;
+  color: #00FF3D;
+}
+
+#chat-dialog ul li {
+  padding-left: 2px;
+}
+
+#users-list {
+  float: left;
+  width: 14.5%;
+  height: 100%;
+  border: 1px solid #0070FF;
+  background-color: black;
+}
+
+#users-list ul {
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+  color: #FF8F00;
+}
+
+#message-line {
+  float: right;
+  width: 84%;
+  height: 23px;
+  font-size: 14px;
+  color: #FF002D;
+  background-color: black;
+}
+
+.log {
+  padding-left: 1px !important;
+  color: #0A00FF;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatJS</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+  <div id="chat-container">
+    <div id="users-list">
+      <ul></ul>
+    </div>
+    <div id="chat-dialog">
+      <ul></ul>
+    </div>
+    <form id="chat-form">
+      <input id="message-line" placeholder="write something and change the world">
+    </form>
+  </div>
+
+
+  <script type="text/javascript" src="./jquery-2.0.2.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var nickname;
+    var server = io.connect(location.origin);
+
+    insertMessage = function(message) {
+      $('#chat-dialog ul').append('<li>' + message.nickname + ': ' + message.text + '</li>');
+      var height = document.getElementById('chat-dialog').scrollHeight;
+      $('#chat-dialog').scrollTop(height);
+    };
+
+    insertLog = function(log) {
+      var li = $('<li>' + log + '</li>').addClass('log');
+      $('#chat-dialog ul').append(li);
+    };
+
+    insertUser = function(user) {
+      li = $('<li>' + user + '</li>').addClass(user);
+      $('#users-list ul').append(li);
+    };
+
+    removeUser = function(user) {
+      console.log('remove ', user);
+      $('.' + user).remove()
+    };
+
+    server.on('connect', function(data) {
+      nickname = prompt("Choose a cool nickname!");
+      insertUser(nickname);
+      server.emit('join', nickname);
+    });
+
+    server.on('message', function(message){
+      insertMessage(message);
+    });
+
+    server.on('joined', function(user) {
+      insertUser(user);
+    });
+
+    server.on('log', function(log) {
+      insertLog(log);
+    });
+
+    server.on('left', function(user) {
+      removeUser(user);
+    });
+
+    $('#chat-form').submit(function(e) {
+      e.preventDefault()
+      var text = $('#message-line').val();
+      $('#message-line').val('');
+      message  = { text: text, nickname: nickname };
+      insertMessage(message);
+      server.emit('message', message);
+    });
+  </script>
+</body>
+</html>
